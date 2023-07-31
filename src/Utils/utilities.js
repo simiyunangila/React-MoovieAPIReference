@@ -36,9 +36,9 @@ export const searchMovies = async (query) => {
     }
   };  
 
-   export const getCategories =async() =>{
+   export const getUpcoming =async() =>{
     try{
-    const response = await fetch (`${BASE_URL}/3/movie/now_playing`,{
+    const response = await fetch (`${BASE_URL}/3/movie/upcoming`,{
         method:'GET',
         headers:{
             Authorization:`Bearer ${ACCESS_TOKEN}`

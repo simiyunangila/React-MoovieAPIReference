@@ -5,13 +5,16 @@ import { searchMovies } from "../../Utils/utilities";
 const NavigationBar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+
   const handleInput = (event) => {
     setSearchValue(event.target.value);
+    handleSearch(event.target.value);
   };
-  const handleSearch = async () => {
-    const results = await searchMovies(searchValue);
+
+  const handleSearch = async (query) => {
+    const results = await searchMovies(query);
     setSearchResults(results.results);
-  };  
+  };
   return (
     <div className="Navbar">
 
@@ -28,7 +31,6 @@ const NavigationBar = () => {
             type="text"
             placeholder="Search"
           />
-          <button onClick={handleSearch}>Search</button>
         </div>
         <div className="links">
           <li><a href="">Home</a></li>
@@ -46,7 +48,6 @@ const NavigationBar = () => {
                 alt={movie.title}
               />
               <h3>{movie.title}</h3>
-              {/* <p>{movie.overview}</p> */}
             </div>
           ))}
         </div>

@@ -5,10 +5,9 @@ const MovieList = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    // Function to fetch movies from an API or any data source
     const fetchMovies = async () => {
       try {
-        // Fetch the movies and set them in the state
+        
         const data = await fetchDataFromAPI();
         setMovies(data);
       } catch (error) {
@@ -18,13 +17,9 @@ const MovieList = () => {
 
     fetchMovies();
   }, []);
-  
-  // Replace "fetchDataFromAPI" with your actual data fetching function.
-  // The fetched data should be an array of movie objects.
-  
-  return (
+    return (
     <div>
-      {/* Movie list display */}
+    
     </div>
   );
 };

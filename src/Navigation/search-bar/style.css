@@ -1,16 +1,21 @@
+.Navbar {
+  background-color: #333;
+  color: #fff;
+}
 
-  
-/* Styling for the navigation bar */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  z-index: 999;
 }
-
-/* Styling for the logo */
 .logo {
   font-size: 40px;
   margin: 0;
@@ -19,10 +24,10 @@
 }
 
 .logo span {
-  color:yellow; /* Change this to your desired color for the "oo" part */
+  color:blue; 
 }
 
-/* Styling for the search input and button */
+
 .search {
   display: flex;
   align-items: center;
@@ -37,16 +42,8 @@
   color: #444;
 }
 
-.search button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: yellow;
-  color: #444;
-  cursor: pointer;
-}
 
-/* Styling for the links */
+
 .links {
   display: flex;
   align-items: center;
@@ -64,16 +61,16 @@
 
 .links li a:hover {
   text-decoration: underline;
-  color: yellow;
+  color: blue;
 }
 
-/* Styling for the sign-in button  */
+
 .links button {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  background-color: yellow;
-  color: #444;
+  background-color: blue;
+  color:white;
   cursor: pointer;
 }
 
@@ -88,7 +85,7 @@
   margin: 10px;
   border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow here */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .search-result img {
@@ -100,6 +97,7 @@
 .search-result h3 {
   font-size: 18px;
   margin-top: 5px;
+  color: blue;
 }
 
 .search-result p {
