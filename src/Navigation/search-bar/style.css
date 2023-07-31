@@ -1,0 +1,108 @@
+
+  
+/* Styling for the navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.logo span {
+  color:yellow; /* Change this to your desired color for the "oo" part */
+}
+
+/* Styling for the search input and button */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin-right: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.search button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: yellow;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Styling for the links */
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links li a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+/* Styling for the sign-in button  */
+.links button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: yellow;
+  color: #444;
+  cursor: pointer;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.search-result {
+  width: 200px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow here */
+}
+
+.search-result img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.search-result h3 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.search-result p {
+  font-size: 14px;
+  margin-top: 5px;
+}
