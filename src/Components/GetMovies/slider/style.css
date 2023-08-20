@@ -1,6 +1,5 @@
 .movies-slider {
   width: 100%;
-  /* padding: 30px ; */
 }
 
 .movies-slider .slick-dots {
@@ -29,10 +28,7 @@
 }
 
 .movie-slide {
-  /* width: 100%;
-  height: 80vh; 
-  overflow: hidden; */
-  width: 200px; /* Adjust this value to your desired width */
+  width: 200px; 
   height: 900px;
   background-size: cover;
   background-position: center;

@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import NavigationBar from './Navigation/search-bar';
+import NavigationBar from './Navigation';
 import MovieSlider from './Components/GetMovies/slider/productSlider';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import GetMovies from './Components/GetMovies';

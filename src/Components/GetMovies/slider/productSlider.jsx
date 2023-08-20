@@ -8,14 +8,18 @@ import './style.css'
 
 const MovieSlider = () => { 
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(false);  useEffect(() => {
+  const [loading, setLoading] = useState(false);  
+
+  useEffect(() => {
     (async () => {
       setLoading(true);
       const movies = await getUpcoming();
       setMovies(movies.results);
       setLoading(false);
     })();
-  }, []);  if (loading) {
+  }, []); 
+  
+  if (loading) {
     return <h1>Loading movies...</h1>;
   }  const 
   max = 10;

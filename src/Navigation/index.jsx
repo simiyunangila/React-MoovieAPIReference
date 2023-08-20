@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './style.css';
-import { searchMovies } from "../../Utils/utilities";
+import { searchMovies } from "../Utils/utilities";
 
 const NavigationBar = () => {
   const [searchValue, setSearchValue] = useState("");
